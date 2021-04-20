@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Crossroads Slideshow | Codrops</title>
+		<meta name="description" content="An experimental slideshow with an inclined look with three slide previews and a content view on click." />
+		<meta name="keywords" content="slideshow, javascript, tweenmax, rotation, animation, css" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+	</head>
+	<body class="loading">
+		<main>
+			<div class="content">
+				<article class="content__item">
+					<div class="img-wrap img-wrap--content">
+						<div class="img img--content" style="background-image: url(img/g1.jpg);"></div>
+					</div>
+					<header class="content__item-header">
+						<span class="content__item-header-meta">El pantano, 22</span>
+						<h2 class="content__item-header-title">Holi</h2>
+					</header>
+					<div class="content__item-copy">
+						<p class="content__item-copy-text">
+						Aquí podemos ver a Gudetama, un personaje de Sanrio. 
+						Es un huevito que tiene mucha flojera, pero está feliz porque está sosteniendo
+						una rica frutilla, ñam.
+	
+								</p>
+						<a href="#" class="content__item-copy-more">more +</a>
+					</div>
+				</article>
+				<article class="content__item">
+					<div class="img-wrap img-wrap--content">
+						<div class="img img--content" style="background-image: url(img/g2.jpg);"></div>
+					</div>
+					<header class="content__item-header">
+						<span class="content__item-header-meta">La camita que hay que dormir</span>
+						<h2 class="content__item-header-title">Mimir</h2>
+					</header>
+					<div class="content__item-copy">
+						<p class="content__item-copy-text">
+						Ahá, aquí igual esta Gudetama, nuestro modelo estrella. Aquí está
+						preparándose para ir a dormir en un pancito. Espero que no se lo coman.
+						</p>
+						<a href="#" class="content__item-copy-more">more +</a>
+					</div>
+				</article>
+				<article class="content__item">
+					<div class="img-wrap img-wrap--content">
+						<div class="img img--content" style="background-image: url(img/g3.jpg);"></div>
+					</div>
+					<header class="content__item-header">
+						<span class="content__item-header-meta">Gude siendo gude</span>
+						<h2 class="content__item-header-title">Meeh</h2>
+					</header>
+					<div class="content__item-copy">
+						<p class="content__item-copy-text">
+						Como pueden ver, gudetama es un huevito muy particular. 
+						Solo quiere descansar, ¿y qué mejor lugar que su propia cáscara?
+						</p>
+						<a href="#" class="content__item-copy-more">more +</a>
+					</div>
+				</article>
+				<article class="content__item">
+					<div class="img-wrap img-wrap--content">
+						<div class="img img--content" style="background-image: url(img/g4.jpg);"></div>
+					</div>
+					<header class="content__item-header">
+						<span class="content__item-header-meta">Gudehelado</span>
+						<h2 class="content__item-header-title">Verano</h2>
+					</header>
+					<div class="content__item-copy">
+						<p class="content__item-copy-text">
+						Gudetama también disfruta mucho el verano, pero el calor 
+						puede ser muy peligroso para él...ya saben, se puede cocinar :c 
+						A su vez, también le gusta mucho hacer cosplay, así que combinó
+						dos de sus hobbies para convertirse en un gudeicecream.
+						</p>
+						<a href="#" class="content__item-copy-more">more +</a>
+					</div>
+				</article>
+			</div>
+			<div class="revealer">
+				<div class="revealer__inner"></div>
+			</div>
+			<div class="grid grid--slideshow">
+				<figure class="grid__item grid__item--slide">
+					<span class="number">01</span>
+					<div class="img-wrap">
+						<div class="img" style="background-image: url(img/g1.jpg);"></div>
+					</div>
+					<figcaption class="caption">Gudetama con su frutillita</figcaption>
+				</figure>
+				<figure class="grid__item grid__item--slide">
+					<span class="number">02</span>
+					<div class="img-wrap">
+						<div class="img" style="background-image: url(img/g2.jpg);"></div>
+					</div>
+					<figcaption class="caption">Gudetama en un pancito</figcaption>
+				</figure>
+				<figure class="grid__item grid__item--slide">
+					<span class="number">03</span>
+					<div class="img-wrap">
+						<div class="img" style="background-image: url(img/g3.jpg);"></div>
+					</div>
+					<figcaption class="caption">Gudetama siendo gude</figcaption>
+				</figure>
+				<figure class="grid__item grid__item--slide">
+					<span class="number">04</span>
+					<div class="img-wrap">
+						<div class="img" style="background-image: url(img/g4.jpg);"></div>
+					</div>
+					<figcaption class="caption">Gudehelado</figcaption>
+				</figure>
+				<div class="titles-wrap">
+					<div class="grid grid--titles">
+						<h3 class="grid__item grid__item--title">Gude</h3>
+						<h3 class="grid__item grid__item--title">Gude</h3>
+						<h3 class="grid__item grid__item--title">Gude</h3>
+						<h3 class="grid__item grid__item--title">Gude</h3>
+					</div>
+				</div>
+				<div class="grid grid--interaction">
+					<div class="grid__item grid__item--cursor grid__item--left"></div>
+					<div class="grid__item grid__item--cursor grid__item--center"></div>
+					<div class="grid__item grid__item--cursor grid__item--right"></div>
+				</div>
+			</div>
+			<div class="frame">
+				<div class="frame__title-wrap">
+					<h1 class="frame__title">Crossroads Slideshow</h1>
+					<div class="frame__links">
+						<a href="https://tympanus.net/Development/ExplodingObjects/">Previous Demo</a>
+						<a href="https://tympanus.net/codrops/?p=39863">Article</a>
+						<a href="https://github.com/codrops/CrossroadsSlideshow/">GitHub</a>
+					</div>
+					<div class="frame__mode" role="radiogroup">
+						<div class="frame__mode-item frame__mode-item--dark">
+							<input id="mode-1" type="radio" name="mode" class="frame__mode-input"></input>
+							<label class="frame__mode-label" for="mode-1">Dark mode</label>
+						</div>
+						<div class="frame__mode-item">
+							<input id="mode-2" type="radio" name="mode" class="frame__mode-input" checked></input>
+							<label class="frame__mode-label frame__mode-label--light" for="mode-2">Light mode</label>
+						</div>
+					</div>
+				</div>
+			</div><!-- /frame -->
+		</main>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/charming.min.js"></script>
+		<script src="js/TweenMax.min.js"></script>
+		<script src="js/demo.js"></script>
+	</body>
+</html>
